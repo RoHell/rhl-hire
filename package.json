@@ -21,9 +21,11 @@
     "@vue/eslint-config-airbnb": "^3.0.0",
     "babel-loader": "^7.1.5",
     "eslint-loader": "^2.1.0",
+    "node-sass": "^4.9.3",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass": "^1.10.4",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
