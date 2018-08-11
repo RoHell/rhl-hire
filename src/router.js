@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './components/views/Home.vue';
+import Home from './components/Home.vue';
 
 const About = () =>
-  import('./components/views/About.vue');
+  import('./components/About.vue');
 
 Vue.use(Router);
 
