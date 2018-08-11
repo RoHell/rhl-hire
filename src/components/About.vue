@@ -7,7 +7,5 @@
 </script>
 
 <style lang="sass" scoped>
-.about
-  color: red
 </style>
 
