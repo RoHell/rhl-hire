@@ -2,5 +2,5 @@ export default {
   /**
    * Pobiera zalogowanego użytkownika
    */
-  getUser: state => state.user || {}
-}
+  getUser: state => state.user || {},
+};

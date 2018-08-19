@@ -1,17 +1,37 @@
 <template lang="pug">
   #app
-    #nav
-      router-link(to='/') Home
-      |  | 
-      router-link(to='/about') About
-    router-view
+    nav-bar
+    main-content
+      router-view
 </template>
 
+<script>
+import navBar from './components/navBar.vue';
+import mainContent from './components/mainContent.vue';
+
+export default {
+  components: {
+    navBar,
+    mainContent,
+  },
+  data() {
+    return {
+    };
+  },
+};
+</script>
+
+
 <style lang="sass">
+html, body
+  margin: 0
+  padding: 0
 #app
   font-family: 'Roboto', sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: #2c3e50
-  margin-top: 60px
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  align-items: center
 </style>

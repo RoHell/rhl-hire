@@ -4,8 +4,12 @@
 </template>
 
 <script>
-
 export default {
-  name: 'home',
 };
 </script>
+
+<style lang="sass" scoped>
+  .home
+    h1
+      color: #00ff00
+</style>
