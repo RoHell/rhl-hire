@@ -26,11 +26,14 @@ export default {
 html, body
   margin: 0
   padding: 0
+html
+  *
+    box-sizing: border-box
+body
 #app
   font-family: 'Roboto', sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  box-sizing: border-box
   display: flex
   flex-direction: column
   align-items: center

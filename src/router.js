@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './components/Home.vue';
+import Login from './components/Login.vue';
 
 // const About = () => import('./components/About.vue');
-import About from './components/About.vue';
+import RentedItems from './components/RentedItems.vue';
+import SingleRentalView from './components/SingleRentalView.vue';
 
 Vue.use(Router);
 
@@ -11,13 +12,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
+      name: 'login',
+      component: Login,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About,
+      path: '/rentals',
+      name: 'rentals',
+      component: RentedItems,
+      children: [
+        {
+          path: ':id',
+          name: 'singleRental',
+          component: SingleRentalView,
+        },
+      ],
     },
   ],
 });

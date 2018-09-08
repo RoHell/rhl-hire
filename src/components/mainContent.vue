@@ -11,6 +11,5 @@ export default {
 <style lang="sass" scoped>
 .content
   width: 100%
-  box-sizing: border-box
   padding: 40px 0
 </style>

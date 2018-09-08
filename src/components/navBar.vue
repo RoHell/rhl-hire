@@ -1,5 +1,6 @@
 <template lang="pug">
 .nav-bar
+  .nav-bar__menu menu
   .nav-bar__logo logo
   .nav-bar__time
     clock
@@ -27,14 +28,13 @@ export default {
   position: fixed
   display: flex
   align-items: center
+  justify-content: space-between
   top: 0
   background: rgba(255, 255, 255, 0.9)
+  padding: 0 10px
   .nav-bar__logo
-    position: absolute
-    left: 18px
+    padding: 0 10px
   .nav-bar__time
-    position: absolute
-    right: 18px
     font-family: monospace
     font-size: 24px
     color: #515151
