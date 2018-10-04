@@ -1,6 +1,6 @@
 <template lang="pug">
-  .home
-    h1 Home
+.content
+  slot
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  .home
-    h1
-      color: #00ff00
+.content
+  width: 100%
+  padding: 40px 0
 </style>

@@ -1,6 +1,6 @@
 <template lang="pug">
-  .home
-    h1 Home
+  .about
+    h1 This is an about page
 </template>
 
 <script>
@@ -9,7 +9,4 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  .home
-    h1
-      color: #00ff00
 </style>
